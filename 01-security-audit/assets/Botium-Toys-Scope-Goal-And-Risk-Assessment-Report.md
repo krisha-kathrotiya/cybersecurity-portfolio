@@ -1,75 +1,71 @@
-## **Scope and goals of the audit**
-**Scope**: The scope is defined as the entire security program at Botium Toys. This means all assets need to be assessed alongside internal processes and procedures related to the implementation of controls and compliance best practices.
-**Goals**: Assess existing assets and complete the controls and compliance checklist to determine which controls and compliance best practices need to be implemented to  improve Botium Toys’ security posture.
+## Audit Scope
 
+The scope of this security audit covers the entire security program at Botium Toys. The audit evaluates how the organization manages, protects, and monitors its assets across technical, administrative, and physical domains.
 
-**Current assets**
-: Assets managed by the IT Department include: 
+Assets and environments reviewed include:
 
+- Employee-owned and company-issued devices
+- Internal network and internet connectivity
+- On-premises systems and supporting infrastructure
+- Business systems supporting accounting, e-commerce, inventory, and telecommunications
+- Data storage, retention, and processing environments
+- Legacy systems requiring ongoing monitoring
+- Physical locations including offices, storfront, and warehouse
 
--	On-premises equipment for in-office business needs 
+The audit focuses on identifying security gaps in asset management, access control, data protection, monitoring, and recovery capabilities.
 
+## Audit Goals
 
--	Employee equipment: end-user devices (desktops/laptops, smartphones), remote workstations, headsets, cables, keyboards, mice, docking stations, surveillance cameras, etc.
+The primary goals of this audit are to:
 
+- Identify and document key organizational assets
+- Evaluate exisiting security controls and compliance practices
+- Assess risks related to confidentiality, integrity, and availability (CIA triad)
+- Determine which security controls and best practices are missing or insufficient
+- Support completion of a structured controls and compliance checklist
+- Provide a foundation for actionable security recommendations
 
--	Storefront products available for retail sale on site and online; stored in the company’s adjoining warehouse
+## Asset Overview
 
+Assets managed by the IT department include:
 
--	Management of systems, software, and services: accounting, telecommunication, database, security, ecommerce, and inventory management
+- On-premises equipment supporting daily business operations
+- Employees equipment such as desktops, laptops, smartphones, remote workstations, and peripherals
+- Retail inventory stored on-site and in the adjoining warehouse
+- Core business systems including accounting, database management, e-commerce, inventory, and security tools
+- Internal network and internet access
+- Data retention snd storage systems
+- Legacy systems that are end-of-life and require manual monitoring and maintenance
 
+## Risk Assessment 
 
--	Internet access
+Botium Toys currently lacks mature asset management and comprehensive security controls. As a result, the organization faces increased risk of data exposure, operational disruption, and potential non-compliance with applicable U.S. and international regulations.
 
+## Control Best Practice Alignment
 
--	Internal network
+The audit identified in the Identify function of the NIST Cybersecurity Framework. Asset discovery, classification, and impact analysis are insufficient, limiting the organization's ability to prioritize risks and protect systems critical to business continuity.
 
+## Risk Score
 
--	Data retention and storage
+# Overall Risk Score: 8/10 (High)
 
+This rating limited control implementation incomplete monitoring capabilities, and weak recovery planning.
 
--	Legacy system maintenance: end-of-life systems that require human monitoring 
+## Key Risk Observations
 
+- All employees have broad access to internally stored data, including potential access to cardholder data and customer PII/ SPII
+- Customer credit card data is stored and processed wothout encryption
+- Least privilage and separation of duties are not enforced
+- Firewall controls are implemented and actively filtering network traffic
+- Antivirus software is deployed and monitored
+- No intrusion detection system (IDS) is in place
+- No disaster recovery plan or backups for critical data exist
+- Breach notification pprocedures for EU customers meet the 72-hour requirement
+- Password policy exists but does not meet modern complexity standards
+- No centralized password management system is enforced
+- Legacy systems are monitored but lack defined maintenance schedules
+- Physical security controls such locks, CCTV, and fire detection systems are present and operational
 
-## **Risk assessment**
-**Risk description**
+## Impact Assessment
 
-
-Currently, there is inadequate management of assets. Additionally, Botium Toys does not have all of the proper controls in place and may not be fully compliant with U.S. and international regulations and standards. 
-
-
-**Control best practices**
-
-
-The first of the five functions of the NIST CSF is Identify. Botium Toys will need to dedicate resources to identify assets so they can appropriately manage them. Additionally, they will need to classify existing assets and determine the impact of the loss of existing assets, including systems, on business continuity.
-
-
-**Risk score**
-On a scale of 1 to 10, the risk score is 8, which is fairly high. This is due to a lack of controls and adherence to compliance best practices.
-
-
-**Additional comments**
-
-
-The potential impact from the loss of an asset is rated as medium, because the IT department does not know which assets would be at risk. The risk to assets or fines from governing bodies is high because Botium Toys does not have all of the necessary controls in place and is not fully adhering to best practices related to compliance regulations that keep critical data private/secure. 
-
-Review the following bullet points for specific details:
-
--	Currently, all Botium Toys employees have access to internally stored data and may be able to access cardholder data and customers’ PII/SPII.
--	Encryption is not currently used to ensure confidentiality of customers’ credit card information that is accepted, processed, transmitted, and stored locally in the company’s internal database. 
--	Access controls pertaining to least privilege and separation of duties have not been implemented.
--	The IT department has ensured availability and integrated controls to ensure data integrity.
--	The IT department has a firewall that blocks traffic based on an appropriately defined set of security rules.
--	Antivirus software is installed and monitored regularly by the IT department. 
--	The IT department has not installed an intrusion detection system (IDS).
--	There are no disaster recovery plans currently in place, and the company does not have backups of critical data. 
--	The IT department has established a plan to notify E.U. customers within 72 hours if there is a security breach.
-
-  
-Additionally, privacy policies, procedures, and processes have been developed and are enforced among IT department members/other employees, to properly document and maintain data.
-
-
--	Although a password policy exists, its requirements are nominal and not in line with current minimum password complexity requirements (e.g., at least eight characters, a combination of letters and at least one number; special characters). 
--	There is no centralized password management system that enforces the password policy’s minimum requirements, which sometimes affects productivity when employees/vendors submit a ticket to the IT department to recover or reset a password.
--	While legacy systems are monitored and maintained, there is no regular schedule in place for these tasks and intervention methods are unclear.
--	The store’s physical location, which includes Botium Toys’ main offices, store front, and warehouse of products, has sufficient locks, up-to-date closed-circuit television (CCTV) surveillance, as well as functioning fire detection and prevention systems.
+The potential business impact of asset loss is assessed as medium due to limited visibility into asset criticality. However, the risk of regulatory fines, data breaches, and reputational damage is high, given the absence of strong access controls, encryption, monitoring, and recovery mechanisms.
